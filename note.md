@@ -9,10 +9,11 @@
 - a function that compaers the user input to the random choice of the first function. and return "win" or "lose" => *play round*
   - *play round* should return true if the user won. and print the specified case using console.log
   - *play round* should be able to make you repeate the match if you got the same choise as the pc
-
+  - *play round* should return 'same' if both computer and human choose the same thing
 
 - a function that stores the result of 5 games with the computer *using for loop*. and report "win" or "lose" in the end => *game*
   - *game* => if the return of *play round* was true. then increment a varyable *player results*
+  - *game* => should be able to repeate the round if the return from *play round* was 'same'
   - *game* => if *player results* >= 3. then print. "you win"
 
 

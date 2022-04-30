@@ -17,8 +17,8 @@ let computerPlay = () => {
 let playRound = (player_choise, compuer_choise) => {
     //rock
     if (player_choise === 'rock' && compuer_choise === 'rock' ){
-        console.log("same choise! i will let you win")
-        return true
+        console.log("same choise! repeat")
+        return "same"
     }
     if (player_choise === 'rock' && compuer_choise === 'paper' ){
         console.log("You Lose! Paper beats Rock");
@@ -35,8 +35,8 @@ let playRound = (player_choise, compuer_choise) => {
         return true;
     }
     if (player_choise === "paper" && compuer_choise === "paper") {
-        console.log("same choise! i will let you win");
-        return true;
+        console.log("same choise! repeate");
+        return "same";
     }
     if (player_choise === "paper" && compuer_choise === "scissors") {
         console.log("You Lose! Scissors beats Paper");
@@ -53,8 +53,8 @@ let playRound = (player_choise, compuer_choise) => {
         return true;
     }
     if (player_choise === "scissors" && compuer_choise === "scissors") {
-        console.log("same choise! i will let you win");
-        return true;
+        console.log("same choise! repeate");
+        return "same";
     }
 }
 
@@ -63,19 +63,22 @@ let playRound = (player_choise, compuer_choise) => {
 
 let game = () => {
     let game_result = 0
+    let number_of_rounds = 5
 
-    for (let i = 0; i < 5; i++){
+    for (let i = 0; i < number_of_rounds; i++) {
         let player_choise = prompt(
             "choose from rock || paper || scissors",
             "rock"
         ).toLowerCase();
 
-        let compuer_choise = computerPlay()
+        let compuer_choise = computerPlay();
 
-        let round_result = playRound(player_choise, compuer_choise)
-        if(round_result === true){
-            game_result ++
-            console.log("current game result is: " , game_result)
+        let round_result = playRound(player_choise, compuer_choise);
+        if (round_result === true) {
+            game_result++;
+            // console.log("current game result is: ", game_result);
+        } else if (round_result === 'same'){
+            number_of_rounds ++
         }
     }
 
