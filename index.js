@@ -1,5 +1,5 @@
 
-let player_choise = prompt("choose from rock || paper || scissors", "rock").toLowerCase()
+
 
 
 
@@ -59,7 +59,39 @@ let playRound = (player_choise, compuer_choise) => {
 }
 
 
-console.log(playRound('paper', computerPlay()))
+// console.log(playRound('paper', computerPlay()))
+
+let game = () => {
+    let game_result = 0
+
+    for (let i = 0; i < 5; i++){
+        let player_choise = prompt(
+            "choose from rock || paper || scissors",
+            "rock"
+        ).toLowerCase();
+
+        let compuer_choise = computerPlay()
+
+        let round_result = playRound(player_choise, compuer_choise)
+        if(round_result === true){
+            game_result ++
+            console.log("current game result is: " , game_result)
+        }
+    }
+
+    if(game_result >= 3){
+        console.log("you have won the game")
+        return true
+    }else {
+        console.log("you have lost the game")
+        return false
+    }
+
+}
+
+
+game()
+
 
 
 
