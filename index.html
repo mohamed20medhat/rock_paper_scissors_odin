@@ -5,11 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <script defer src="index.js"></script> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello to my amazing rock paper scissors game</h1>
-    <p>hope you all like this game</p>
     
-    <script  src="index.js"></script>
+    <div class="game-container">
+        <h1 id="game-result">Current Result</h1>
+        <div class="result-board board">
+            <div class="score" id="your-result"></div>
+            <div class="score" id="pc-result"></div>
+        </div>
+        
+        <ul class="btn-container">
+            <li class="big-button" id="rock"><img src="/imgs/rock.png" alt="Rock"></li>
+            <li class="big-button" id="paper"><img src="/imgs/paper.png" alt="paper"></li>
+            <li class="big-button" id="scissors"><img src="/imgs/scissors.png" alt="scissors"></li>
+        </ul>
+        
+        <div class="action-board board">
+            <div class="score-pic" id="your-pic"></div>
+            <div class="score-pic" id="pc-pic"></div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <div class="footer">
+        MeowTech &copy; 2022
+    </div>
+
 </body>
 </html>
