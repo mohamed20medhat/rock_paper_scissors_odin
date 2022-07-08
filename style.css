@@ -1,5 +1,10 @@
 
 
+/* body{
+  background-color: rgb(222, 217, 217);
+} */
+
+
 .game-container {
   display: flex;
   align-items: center;
@@ -17,15 +22,23 @@
 }
 
 .action-board {
-  margin-top: 20px;
+  margin-top: 50px;
   width: 800px;
-  height: 150px;
+  height: 160px;
+  border: 2px solid rgb(80, 22, 122);
+
 }
 
 .score {
   width: 50px;
   height: 50px;
   border: 2px solid black;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(16, 42, 134);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
@@ -36,11 +49,17 @@ ul {
 img {
   max-width:100%;
   max-height:100%;
+  border-radius: 40px;
+}
+
+.img-button:hover {
+  border: 2px solid rgba(148, 50, 11, 0.66);
+  transform: scale(1.15);
 }
 
 
 .btn-container {
-  margin-top: 22px;
+  margin-top: 50px;
   width: 1000px;
   display: flex;
   justify-content:space-evenly;
@@ -49,9 +68,9 @@ img {
 }
 
 .big-button {
-  height: 150px;
+  height: 200px;
   width: 220px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 3px;
   display: flex;
   justify-content: center;
@@ -62,7 +81,6 @@ img {
 .score-pic {
   width: 220px;
   height: 150px;
-  border: 2px solid black;
   
   display: flex;
   justify-content: center;
