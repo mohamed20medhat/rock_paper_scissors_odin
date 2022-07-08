@@ -48,18 +48,18 @@ let playRoundEvent = (e) => {
     if (playerScore >= pcScore) {
       gameResults.textContent = "You have won the game"
       gameResults.style.color = "green"
-      restBoard()
+      resetBoard()
     } else {
       gameResults.textContent = "You have lost the game"
       gameResults.style.color = "red"
-      restBoard()
+      resetBoard()
     }
   }
 
 }
 
 
-function restBoard() {
+function resetBoard() {
   playerScore = 0
   pcScore = 0
   yourResultInBoard.textContent = playerScore

@@ -1,2 +1,2 @@
 # rock_paper_scissors_odin
-rock paper scissors game. Odin project fundamentals course 
+Rock paper scissors game. for the Odin project fundamentals  
